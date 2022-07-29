@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    margin: 0;
+    width: 100%;
+    background: url(images/bg-mobile.svg) hsl(257, 40%, 49%);
+
+}
+/* wrapper */
+.wrapper{
+    width: 80%;
+    margin: auto;
+}
+/* buttons */
+
+button{
+    width: 200px;
+    height: 45px;
+    border: 2px white solid;
+    border-radius: 25px;
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    font-size: 15px;
+    text-align:center;
+    padding: 12px;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+}
+button:hover{
+    background: hsl(300, 69%, 71%);
+    border: hsl(300, 69%, 71%);
+    color: #fff;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+}
+header img{
+    width: 200px;
+}
+
+/* hero section */
+.hero{
+    width: 100%;
+    height: max-content;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.heroImg{
+    width: auto;
+    height: max-content;
+}
+.heroImg img{
+    width: 100%;
+}
+.heroContent{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+    height: max-content;
+}
+h2{
+    color: #fff;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    color: rgb(255, 255, 255, 0.65);
+    font-size: 17px;
+    line-height: 23px;
+}
+
+/* footer */
+footer{
+    height: 100px;
+}
+.socialBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px #fff solid;
+    border-radius: 30px;
+}
+.social:hover{
+    border: 1px hsl(300, 69%, 71%) solid;
+}
+.fa-brands{
+    color: #fff;
+}
+.fa-brands:hover{
+    color: hsl(300, 69%, 71%);
+}
+
+/* desktop view */
+@media only screen and (min-width: 600px) {
+    body{
+        background: url(images/bg-desktop.svg) hsl(257, 40%, 49%);
+    }
+    .hero{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .heroImg img{
+        width: 500px;
+    }
+    .heroContent{
+        text-align: left;
+        margin-top: 20px;
+    }
+    .heroContent .btn{
+        display: flex;
+        text-align: center;
+        align-self: center;
+        margin-top: 20px;
+    }
+    h2{
+        margin-top: 0;
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+    p{
+        margin: 0;
+    }
+    button{
+        display: flex;
+        justify-self: left;
+    }
+    .btn{
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+    .socialBox{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        width: 100%;
+        height: 100px;
+    }
+}
